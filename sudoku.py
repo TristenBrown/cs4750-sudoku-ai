@@ -109,6 +109,7 @@ def forward_checking(cell):
     x = set_cell_num_domain(cell)
     if x == False:
         return "failuer"
+        
 
 
 map1 = [
@@ -152,6 +153,8 @@ while len(stack) > 0:
         chosen_cell.number = x
         chosen_cell.isComplete = True
         t = forward_checking(chosen_cell)
+        for i in range(n):
+            print(cur_map[i])
 
     if t != "failuer":
         pass
