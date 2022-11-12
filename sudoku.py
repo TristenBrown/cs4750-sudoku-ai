@@ -22,7 +22,6 @@ class Cell:
 
 
 def get_input(inputMap):
-    print("here")
     for i in range(n):
         cur_map.append([])
     for row in range(n):
